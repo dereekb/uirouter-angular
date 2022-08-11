@@ -1,0 +1,100 @@
+{
+  "name": "@uirouter/angular",
+  "description": "State-based routing for Angular",
+  "version": "9.2.0-next",
+  "homepage": "https://ui-router.github.io/angular",
+  "contributors": [
+    {
+      "name": "Chris Thielen",
+      "web": "https://github.com/christopherthielen"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "UIRouter Team",
+      "web": "https://github.com/ui-router?tab=members"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ui-router/angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ui-router/angular/issues"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "license": "MIT",
+  "distDir": "dist",
+  "peerDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "@uirouter/core": "^6.0.8",
+    "@uirouter/rx": "^1.0.0"
+  },
+  "docgen": {
+    "publishDir": "_ng2_docs",
+    "navigation": {
+      "": [
+        "UIRouter"
+      ],
+      "Services": [
+        "StateService",
+        "StateRegistry",
+        "TransitionService",
+        "UrlService",
+        "UrlConfig",
+        "UrlRules"
+      ],
+      "Interfaces": [
+        "Ng2StateDeclaration",
+        "UiOnParamsChanged",
+        "UiOnExit"
+      ],
+      "Components": [
+        "UIView",
+        "UISref",
+        "UISrefActive"
+      ],
+      "Other": [
+        "Transition",
+        "Trace"
+      ]
+    },
+    "include": [
+      {
+        "pkg": "@uirouter/core",
+        "repo": "https://github.com/ui-router/core",
+        "branch": "master"
+      },
+      {
+        "pkg": "@uirouter/rx",
+        "repo": "https://github.com/ui-router/rx"
+      }
+    ]
+  },
+  "module": "fesm2015/uirouter-angular.mjs",
+  "es2020": "fesm2020/uirouter-angular.mjs",
+  "esm2020": "esm2020/uirouter-angular.mjs",
+  "fesm2020": "fesm2020/uirouter-angular.mjs",
+  "fesm2015": "fesm2015/uirouter-angular.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/uirouter-angular.mjs",
+      "es2020": "./fesm2020/uirouter-angular.mjs",
+      "es2015": "./fesm2015/uirouter-angular.mjs",
+      "node": "./fesm2015/uirouter-angular.mjs",
+      "default": "./fesm2020/uirouter-angular.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

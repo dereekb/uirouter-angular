@@ -1,7 +1,7 @@
 {
   "name": "@uirouter/angular",
   "description": "State-based routing for Angular",
-  "version": "9.1.0",
+  "version": "9.2.0-next",
   "scripts": {
     "clean": "shx rm -rf lib lib-esm _bundles _doc dist",
     "compile": "npm run clean && ngc",
@@ -74,6 +74,25 @@
     "tslint": "^6.1.0",
     "typescript": "~4.6.2",
     "zone.js": "0.11.4"
+  },
+  "module": "dist/fesm2015/uirouter-angular.mjs",
+  "es2020": "dist/fesm2020/uirouter-angular.mjs",
+  "esm2020": "dist/esm2020/uirouter-angular.mjs",
+  "fesm2020": "dist/fesm2020/uirouter-angular.mjs",
+  "fesm2015": "dist/fesm2015/uirouter-angular.mjs",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./dist/package.json"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "esm2020": "./dist/esm2020/uirouter-angular.mjs",
+      "es2020": "./dist/fesm2020/uirouter-angular.mjs",
+      "es2015": "./dist/fesm2015/uirouter-angular.mjs",
+      "node": "./dist/fesm2015/uirouter-angular.mjs",
+      "default": "./dist/fesm2020/uirouter-angular.mjs"
+    }
   },
   "jest": {
     "preset": "jest-preset-angular",
